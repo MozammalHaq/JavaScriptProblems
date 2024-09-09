@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f4f7;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: "Hind Siliguri", sans-serif;
+}
+
+header {
+  background-color: #172227;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+header {
+  background-color: #172227;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.header-left h1 {
+  font-size: 24px;
+}
+
+.header-button {
+  background-color: #535454;
+  color: tomato;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.header-button:hover {
+  background-color: #1f2a2e;
+}
+
+.problem {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 22px;
+}
+
+.problem span {
+  color: tomato;
+  font-size: 30px;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.converter {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 300px;
+  width: 100%;
+}
+
+.converter label {
+  font-size: 18px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.converter input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+#result {
+  color: green;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.converter button {
+  width: 100%;
+  padding: 10px;
+  background-color: #172227;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.converter button:hover {
+  background-color: #0e171a;
+}
+
+footer {
+  background-color: #172227;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Mobile Responsive */
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .header-left {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header-left h1 {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+
+  .logo {
+    width: 50px;
+    height: 50px;
+  }
+
+  .header-button {
+    margin-top: 10px;
+    width: 80%;
+  }
+
+  .problem {
+    font-size: 18px;
+  }
+
+  .problem span {
+    font-size: 24px;
+  }
+
+  main {
+    padding: 10px;
+  }
+
+  .converter {
+    max-width: 100%;
+    padding: 15px;
+  }
+
+  #result {
+    font-size: 16px;
+    top: 100px;
+    width: 100%;
+    margin-left: 0;
+    left: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-button {
+    font-size: 14px;
+    padding: 8px 15px;
+  }
+
+  .problem {
+    font-size: 16px;
+  }
+
+  .problem span {
+    font-size: 20px;
+  }
+
+  .converter label,
+  .converter input {
+    font-size: 16px;
+  }
+
+  .converter button {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  #result {
+    font-size: 14px;
+    top: 90px;
+  }
+}
