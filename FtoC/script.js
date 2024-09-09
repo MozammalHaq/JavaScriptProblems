@@ -8,11 +8,13 @@ function convertTemperature() {
   const celsius = celsiusInput.value;
   if (celsius === "") {
     resultParagraph.textContent = "Please enter a value.";
+    celsiusInput.value = "";
   } else {
     const fahrenheit = (celsius * 9) / 5 + 32;
     resultParagraph.textContent = `${celsius}°C is equal to ${fahrenheit.toFixed(
       2
     )}°F`;
+    celsiusInput.value = "";
   }
 }
 
