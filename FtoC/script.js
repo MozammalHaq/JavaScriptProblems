@@ -20,15 +20,3 @@ function convertTemperature() {
 
 // Event Listener for the Convert Button
 convertBtn.addEventListener("click", convertTemperature);
-
-// function convertTemperature() {
-//   const celsius = document.getElementById("celsius").value;
-//   if (celsius === "") {
-//     document.getElementById("result").textContent = "Please enter a value.";
-//   } else {
-//     const fahrenheit = (celsius * 9) / 5 + 32;
-//     document.getElementById(
-//       "result"
-//     ).textContent = `${celsius}°C is equal to ${fahrenheit.toFixed(2)}°F`;
-//   }
-// }

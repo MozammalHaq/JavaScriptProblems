@@ -77,7 +77,6 @@ main {
   justify-content: center;
   align-items: center;
   padding: 20px;
-  /* position: relative; */
 }
 
 .converter {
@@ -106,14 +105,8 @@ main {
 }
 
 #result {
-  /* position: absolute;
-  left: 50%;
-  top: 110px; */
   color: green;
   font-weight: 700;
-  /* width: 300px;
-  margin-left: -150px;
-  border-radius: 50px; */
   margin-bottom: 20px;
 }
 
@@ -142,15 +135,15 @@ footer {
 /* Mobile Responsive */
 
 @media (max-width: 768px) {
-  /* header {
+  header {
     flex-direction: column;
     text-align: center;
-  } */
+  }
 
-  /* .header-left {
+  .header-left {
     flex-direction: column;
     align-items: center;
-  } */
+  }
 
   .header-left h1 {
     font-size: 20px;
@@ -162,10 +155,10 @@ footer {
     height: 50px;
   }
 
-  /* .header-button {
+  .header-button {
     margin-top: 10px;
     width: 80%;
-  } */
+  }
 
   .problem {
     font-size: 18px;
